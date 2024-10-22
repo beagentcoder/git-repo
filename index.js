@@ -10,7 +10,7 @@ app.use(bodyParser.json())
 
 app.use('/api/git-repo',gitRouter)
 app.get('/',(req,res)=>{
-    res.send('Api Usage /api/git-repo/username')
+    res.send('Api Usage /api/git-repo/?username="USERNAME"')
 })
 
 
